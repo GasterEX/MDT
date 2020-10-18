@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src="program.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Desine.css" type="text/css">
+  </head>
+  <body>
+    <h2>-Manifest Generator-</h2>
+
+    <div>
+      <h4>■Name</h4>
+      <input type="text" id="name">
+
+      <h4>■Description</h4>
+      <textarea id="description" rows="4" cols="40"> </textarea>
+
+      <h4>■Type</h4>
+      <select id="type" rows="4" cols="40">
+        <option value="resources">resources</option>
+        <option value="data">data</option>
+        <option value="skin_pack">skin_pack</option>
+    </select>
+
+      <h4>■Version</h4>
+      <input id="version1" size="2" maxlength="4" value="1"></input> <span>,</span>
+      <input id="version2" size="2" maxlength="4" value="0"></input> <span>,</span>
+      <input id="version3" size="2" maxlength="4" value="0"></input>
+    </div>
+    <h4></h4>
+
+    <button onclick="generate()" class = "button">Generate</button>
+    <button onclick="copy()" class = "button">Copy</button>
+    <button onclick="download()" class = "button">Download</button>
+
+    <h4></h4>
+    <textarea id="manifest" align="right" rows="25" cols="55" readonly></textarea>
+    <br>
+    </div>
+    <a>Thankyou for using by</a> <a href="https://twitter.com/gaster_ex"> Gaster_EX </a>
+  </body>
+</html>
