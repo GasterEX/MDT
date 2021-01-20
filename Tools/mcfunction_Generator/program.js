@@ -41,7 +41,7 @@ function download() {
     var zip = new JSZip();
     zip.folder(pack_name).file("manifest.json", mmanifest);
     zip.folder(pack_name).file("pack_icon.png", image_data, { base64: true });
-    zip.folder(pack_name).folder("functions").file(`${function_name}.json`, function_code);
+    zip.folder(pack_name).folder("functions").file(`${function_name}.mcfunction`, function_code);
     zip.generateAsync({ type: "blob" }).then(blob => {
         let dlLink = document.createElement("a");
         const dataUrl = URL.createObjectURL(blob);
