@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="program.js"></script>
+        <title>item.json Generater</title>
+    </head>
+    <body>
+        <h2>item.json Generater</h2>
+        <a href="https://twitter.com/Gaster_EX">制作者: @Gaster_EX</a>
+        <br></br>
+        <a href="https://twitter.com/commanderkinji">協力者: @commanderkinji</a>
+        <h3> </h3> 
+        <a>アイテムのid</a>
+        <h3> </h3> 
+        <code>sample:</code>
+        <input type="text" id=id>
+        <h3> </h3>      
+        <a>食べるときにかかる時間</a>
+        <input type="number" id=eattime> <code>1で0.05秒</code>
+        <h3> </h3> 
+        <a>最大スタック量</a>
+        <input type="number" id=stack> <code>最大スタック数 231</code>
+        <h3> </h3> 
+        <a>エンチャントのキラキラがつくかどうか</a>
+        <input type="checkbox" id="enchant" >
+        <h3> </h3> 
+        <a>満腹度の回復量</a>
+        <input type="number" id="full"><code>1で0.5の回復量</code>
+        <h3> </h3> 
+        <a>満腹度に関係なく食べれるかどうか</a>
+        <input type="checkbox" id="eatfull">
+        <h3> </h3> 
+        <a>食べた時に変化するアイテム</a>
+        <input type="text" id="change"> <code>ない場合は記載しなくてもよき</code>
+        <h3> </h3> 
+        <button onclick="generate()">生成</button>
+        <br></br>
+        <div id="mv"> </div>
+    </body>
+</html>
