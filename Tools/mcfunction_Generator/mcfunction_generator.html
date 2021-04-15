@@ -6,20 +6,30 @@
     <script src="program.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jszip@3.2.1/dist/jszip.js"></script>
     <title>mcfunction Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
-<body>
-    <h2>mcfunction Generator</h2>
-    <p>■pack_name</p>
-    <input id="pack_name" type="text" />
-    <p>■function_name</p>
-    <form style="display: inline-flex;">
-    <input id="function_name" type="text" /> .mcfunction
+<body class="container">
+    <h2 class="display-4">mcfunction Generator</h2>
+    <br>
+    <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">pack_name</label>
+          <input type="text" class="form-control" id="pack_name">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">function_name</label>
+          <input type="text" class="form-control" id="function_name">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">function</label>
+            <textarea class="form-control" id="function" rows="10" cols="30" wrap="off" spellcheck="false"></textarea>
+        </div>
+        <br>
     </form>
-    <h1> </h1>
-    <p>■function</p>
-    <textarea id="function" rows="30" cols="60" wrap="off" spellcheck="false"></textarea>
-    <br />
-    <input onclick="download()" type="button" value="mcpack Download" style="width:150px;height:35px" />
+
+    <input onclick="download()" type="button" value="mcpack Download"  class="btn btn-primary">
     <p>Developer : <a href="https://www.youtube.com/channel/UCViGlH4sjq7xQGVLv8SGskw">Gaster_EX</a> </p>
 
 </body>

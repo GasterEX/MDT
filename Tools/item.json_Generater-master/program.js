@@ -48,9 +48,4 @@ function generate() {
     var itemv = document.getElementById("mv");
     itemv.innerHTML = "<pre>" + item + "</pre>"
 }
-    function copy() {
-        var copytext = item;
-        copytext.select();
-        document.execCommand("copy");
-        alert("dfa")
-    }
+
