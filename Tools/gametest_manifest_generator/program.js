@@ -2,37 +2,46 @@ function generate() {
   var name = document.getElementById("name").value;
   var description = document.getElementById("description").value;
   var entry = document.getElementById("entry").value;
+  if(!name || !description || !entry) alert("error")
+
 
   var manifest = 
   {
-     "format_version": 2,
-     "header": {
-      "description": "",
+    "format_version": 2,
+    "header": {
       "name": "",
+      "description": "",
       "uuid": "",
-      "version": [ 0, 0, 1 ],
-      "min_engine_version": [ 1, 16, 220 ]
-     },
-     "modules": [
+      "platform_locked": false,
+      "version": [0, 1, 0],
+      "min_engine_version": [1, 18, 20],
+      "pack_scope": "world"
+    },
+    "modules": [
       {
-       "description": "",
-       "type": "javascript",
-       "uuid": "",
-       "version": [0, 1, 0],
-       "entry": ""
+        "description": "",
+        "type": "javascript",
+        "uuid": "",
+        "version": [0, 0, 1],
+        "language": "Javascript",
+        "entry": ""
       }
-     ],
-     "dependencies": [
+    ],
+    "dependencies": [
       {
-       "uuid": "",
-       "version": [0, 1, 0]
+        "uuid": "",
+        "version": [0, 1, 0]
       },
       {
-       "uuid": "",
-       "version": [0, 1, 0]
+        "uuid": "",
+        "version": [0, 1, 0]
+      },
+      {
+        "uuid": "",
+        "version": [0, 1, 0]
       }
-     ]
-  };
+    ]
+  }
 
 
   manifest.header.name = name;
@@ -42,7 +51,7 @@ function generate() {
   manifest.modules[0].entry = entry;
   manifest.dependencies[0].uuid = uuid();
   manifest.dependencies[1].uuid = uuid();
-
+  manifest.dependencies[2].uuid = uuid();
   document.getElementById("manifest").value = JSON.stringify(manifest, null, 4)
 
 }
