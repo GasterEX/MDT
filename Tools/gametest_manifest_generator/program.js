@@ -28,18 +28,26 @@ function generate() {
       }
     ],
     "dependencies": [
-      {
-        "uuid": "",
-        "version": [0, 1, 0]
-      },
-      {
-        "uuid": "",
-        "version": [0, 1, 0]
-      },
-      {
-        "uuid": "",
-        "version": [0, 1, 0]
-      }
+        {
+            /* Resource Pack */
+			      "uuid": "5e79e091-8ded-46c4-a1c5-d419e97f0e63",
+			      "version": [ 1, 1, 0 ]
+		    },
+        {
+            /* GameTest Module */
+            "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+            "version": [ 0, 1, 0 ]
+        },
+        {
+            /* Minecraft Module */
+            "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+            "version": [ 0, 1, 0 ]
+        },
+        {
+            /* Minecraft UI Module */
+            "uuid": "2bd50a27-ab5f-4f40-a596-3641627c635e",
+            "version": [ 0, 1, 0 ]
+        }
     ]
   }
 
@@ -49,13 +57,10 @@ function generate() {
   manifest.header.uuid = uuid();
   manifest.modules[0].uuid = uuid();
   manifest.modules[0].entry = entry;
-  manifest.dependencies[0].uuid = uuid();
-  manifest.dependencies[1].uuid = uuid();
-  manifest.dependencies[2].uuid = uuid();
   document.getElementById("manifest").value = JSON.stringify(manifest, null, 4)
 
 }
-
+//thanks for kinji
 function uuid(){
   var uuid = "", i, random;
   for (i = 0; i < 32; i++) {
@@ -67,7 +72,6 @@ function uuid(){
   }
   return uuid;
 }
-
 function execCopy(string){
 
   // 空div 生成
