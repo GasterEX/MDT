@@ -29,22 +29,14 @@ function generate() {
     ],
     "dependencies": [
         {
-            /* Resource Pack */
-			      "uuid": "5e79e091-8ded-46c4-a1c5-d419e97f0e63",
-			      "version": [ 1, 1, 0 ]
-		    },
-        {
-            /* GameTest Module */
             "uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
             "version": [ 0, 1, 0 ]
         },
         {
-            /* Minecraft Module */
             "uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
             "version": [ 0, 1, 0 ]
         },
         {
-            /* Minecraft UI Module */
             "uuid": "2bd50a27-ab5f-4f40-a596-3641627c635e",
             "version": [ 0, 1, 0 ]
         }
